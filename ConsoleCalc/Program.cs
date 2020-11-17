@@ -14,7 +14,8 @@ namespace ConsoleCalc
             CStack cs;
             cs = new CStack();
             cs.X = 12;
-
+            Console.WriteLine("hej");
+            Console.WriteLine("det här är ett test");
             Console.ReadKey();
 
         }
