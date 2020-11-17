@@ -14,6 +14,9 @@ namespace ConsoleCalc
             CStack cs;
             cs = new CStack();
             cs.X = 12;
+
+            Console.ReadKey();
+
         }
     }
 }
