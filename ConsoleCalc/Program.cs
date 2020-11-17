@@ -28,7 +28,7 @@ namespace ConsoleCalc
                     Console.WriteLine("hej då");
                     stop = true;
                 }
-                else if ( commands[0] == "enter" )
+                else if ( commands[0] == "enter" && commands.Length == 2 )
                 {
                     cs.entry = commands[1];
                     cs.Enter();
@@ -36,19 +36,19 @@ namespace ConsoleCalc
                 }
                 else if (commands[0] == "+")
                 {
-
+                    cs.BinOp("+");
                 }
                 else if (commands[0] == "*")
                 {
-
+                    cs.BinOp("×");
                 }
                 else if (commands[0] == "-")
                 {
-
+                    cs.BinOp("−");
                 }
                 else if (commands[0] == "/")
                 {
-
+                    cs.BinOp("÷");
                 }
                 else if (commands[0] == "show")
                 {
