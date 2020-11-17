@@ -108,9 +108,14 @@ namespace CStackClass
          */
         public void Enter()
         {
+            double newX;
             if (entry != "")
             {
-                RollSetX(double.Parse(entry));
+                //TBD TryParse?
+                if (double.TryParse(entry, out newX))
+                    RollSetX(newX);
+                else
+                    Console.WriteLine("wrong input");
                 entry = "";
             }
         }
@@ -152,8 +157,8 @@ namespace CStackClass
                 case "−": DropSetX(Y - X); break;
                 case "×": DropSetX(Y * X); break;
                 case "÷": DropSetX(Y / X); break;
-                case "yˣ": /* NYI: Power */ break;
-                case "ˣ√y": /* NYI: Xth Root */ break;
+                case "yˣ": DropSetX(Math.Pow(Y, X)); break;
+                case "ˣ√y": DropSetX(Math.Pow(Y, 1 / X)); break;
             }
         }
         /* METHOD: Unop
@@ -170,19 +175,19 @@ namespace CStackClass
             {
                 // Powers & Logarithms:
                 case "x²": SetX(X * X); break;
-                case "√x": SetX(X / 2); break;
-                case "log x": /* NYI: 10th Logarithm */ break;
-                case "ln x": /* NYI: Natural Logarithm */ break;
-                case "10ˣ": /* NYI: Exponent of 10 */ break;
-                case "eˣ": /* NYI: Exponent of e */ break;
+                case "√x": SetX(Math.Sqrt(X)); break;
+                case "log x": SetX(Math.Log10(X)); break;
+                case "ln x": SetX(Math.Log(X)); break;
+                case "10ˣ": SetX(Math.Pow(10, X)); break;
+                case "eˣ": SetX(Math.Pow(Math.E, X)); break;
 
                 // Trigonometry:
                 case "sin": SetX(Math.Sin(X)); break;
-                case "cos": /* NYI: Cosine */ break;
-                case "tan": /* NYI: Tangent */ break;
-                case "sin⁻¹": /* NYI: Arc Sine */ break;
-                case "cos⁻¹": /* NYI: Arc Cosine */ break;
-                case "tan⁻¹": /* NYI: Arc Tangent */ break;
+                case "cos": SetX(Math.Cos(X)); break;
+                case "tan": SetX(Math.Tan(X)); break;
+                case "sin⁻¹": SetX(Math.Asin(X)); break;
+                case "cos⁻¹": SetX(Math.Acos(X)); break;
+                case "tan⁻¹": SetX(Math.Atan(X)); break;
             }
         }
         /* METHOD: Nilop
@@ -198,7 +203,7 @@ namespace CStackClass
             switch (op)
             {
                 case "π": RollSetX(Math.PI); break;
-                case "e": /* NYI: e Constant */ break;
+                case "e": RollSetX(Math.E); break;
             }
         }
         /* METHOD: Roll

@@ -30,6 +30,8 @@ namespace ConsoleCalc
                 }
                 else if ( commands[0] == "enter" )
                 {
+                    cs.entry = commands[1];
+                    cs.Enter();
 
                 }
                 else if (commands[0] == "+")
@@ -50,7 +52,10 @@ namespace ConsoleCalc
                 }
                 else if (commands[0] == "show")
                 {
-
+                    Console.WriteLine($"T: {cs.T.ToString()}");
+                    Console.WriteLine($"Z: {cs.Z.ToString()}");
+                    Console.WriteLine($"Y: {cs.Y.ToString()}");
+                    Console.WriteLine($"X: {cs.X.ToString()}");
                 }
                 else
                 {
