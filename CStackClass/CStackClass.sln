@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CStackClass", "CStackClass.shproj", "{D8C0D29E-4CEB-442E-91C9-6464147B7857}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		CStackClass.projitems*{d8c0d29e-4ceb-442e-91c9-6464147b7857}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {346A8CCA-F0DD-4CF2-B924-7BDCCFA2E16C}
+	EndGlobalSection
+EndGlobal

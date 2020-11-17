@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFCalc", "WPFCalc.csproj", "{5C04E275-B313-40A5-895B-84EBB587E0A8}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CStackClass", "..\CStackClass\CStackClass.shproj", "{D8C0D29E-4CEB-442E-91C9-6464147B7857}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\CStackClass\CStackClass.projitems*{5c04e275-b313-40a5-895b-84ebb587e0a8}*SharedItemsImports = 4
+		..\CStackClass\CStackClass.projitems*{d8c0d29e-4ceb-442e-91c9-6464147b7857}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C04E275-B313-40A5-895B-84EBB587E0A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C04E275-B313-40A5-895B-84EBB587E0A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C04E275-B313-40A5-895B-84EBB587E0A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C04E275-B313-40A5-895B-84EBB587E0A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B059FFB7-DF51-4E80-9EA6-F5407DB4BC01}
+	EndGlobalSection
+EndGlobal

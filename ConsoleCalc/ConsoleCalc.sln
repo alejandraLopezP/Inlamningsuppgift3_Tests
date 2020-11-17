@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCalc", "ConsoleCalc.csproj", "{E44F3BCA-2E2B-43CD-BBB6-908C653821C2}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CStackClass", "..\CStackClass\CStackClass.shproj", "{D8C0D29E-4CEB-442E-91C9-6464147B7857}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\CStackClass\CStackClass.projitems*{d8c0d29e-4ceb-442e-91c9-6464147b7857}*SharedItemsImports = 13
+		..\CStackClass\CStackClass.projitems*{e44f3bca-2e2b-43cd-bbb6-908c653821c2}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E44F3BCA-2E2B-43CD-BBB6-908C653821C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E44F3BCA-2E2B-43CD-BBB6-908C653821C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E44F3BCA-2E2B-43CD-BBB6-908C653821C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E44F3BCA-2E2B-43CD-BBB6-908C653821C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F70CEB3-D693-41EA-B15E-A963286E8632}
+	EndGlobalSection
+EndGlobal
