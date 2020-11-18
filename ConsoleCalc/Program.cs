@@ -14,7 +14,7 @@ namespace ConsoleCalc
             CStack cs;
             cs = new CStack();
             bool stop = false;
-            Console.WriteLine("welcome to calc");
+            Console.WriteLine("Welcome to ConsoleCalc");
             string input;
             string[] commands;
             do
@@ -25,7 +25,7 @@ namespace ConsoleCalc
 
                 if (commands[0] == "quit")
                 {
-                    Console.WriteLine("Bye!");
+                    Console.WriteLine("Bye! Press any key to continue ...");
                     stop = true;
                 }
                 else if (commands[0] == "enter" && commands.Length == 2)
@@ -123,7 +123,7 @@ namespace ConsoleCalc
                 }
                 else
                 {
-                    Console.WriteLine("wrong input, try again");
+                    Console.WriteLine("Unknown command: {0}", commands[0]);
                 }
             } while (!stop);
             Console.ReadKey();
