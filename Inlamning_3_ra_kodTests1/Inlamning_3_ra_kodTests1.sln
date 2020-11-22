@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inlamning_3_ra_kodTests1", "Inlamning_3_ra_kodTests1.csproj", "{AFD3BF0A-2A03-439E-92CC-608C5FAD78EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFD3BF0A-2A03-439E-92CC-608C5FAD78EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFD3BF0A-2A03-439E-92CC-608C5FAD78EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFD3BF0A-2A03-439E-92CC-608C5FAD78EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFD3BF0A-2A03-439E-92CC-608C5FAD78EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1B7F92C-C017-440A-A0B1-0584EDFE36AE}
+	EndGlobalSection
+EndGlobal
